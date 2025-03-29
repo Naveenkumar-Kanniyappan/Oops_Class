@@ -147,3 +147,23 @@
 //     }
 // }
 // console.log(Person.hello('naveen'));   
+
+
+//apstract
+
+class Persion{
+    constructor(name,mobile,email){
+        this.name = name;
+        this.mobile = mobile;
+        this.email = email;
+    }
+    #show(){
+        return (`my name is ${this.name}`);
+    }
+    result(){
+        return this.#show();
+    }
+}
+
+const user = new Persion("naveen",9585961005,"kulithalsainaveen@gmail.com");
+console.log(user.result());
